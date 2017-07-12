@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+    <div class="wrap">
+        <span class="t_num badge"></span>
+        <img src="image/home_logo.jpg" width="500px" height="80px" />
+        <div class="content">
+            <nav class="navbar navbar-inverse">
+                <ul class="nav navbar-nav">
+					
+                    <li><a href="#">小炒</a>
+                        <div class="food">
+							
+                            <figure class="food_area">
+                                <img class="img-thumbnail" src="image/food1.jpg"/>
+                                <figcaption>
+                                    <h4>牛肉</h4>
+                                    <span>价格：20</span>
+                                    <a><span class="glyphicon glyphicon-plus-sign f_plus" data-this_f_id=""></span></a>
+                                </figcaption>
+                            </figure>
+							<figure class="food_area">
+                                <img class="img-thumbnail" src="image/food1.jpg"/>
+                                <figcaption>
+                                    <h4>牛肉</h4>
+                                    <span>价格：20</span>
+                                    <a><span class="glyphicon glyphicon-plus-sign f_plus" data-this_f_id=""></span></a>
+                                </figcaption>
+                            </figure>
+							<figure class="food_area">
+                                <img class="img-thumbnail" src="image/food1.jpg"/>
+                                <figcaption>
+                                    <h4>牛肉</h4>
+                                    <span>价格：20</span>
+                                    <a><span class="glyphicon glyphicon-plus-sign f_plus" data-this_f_id=""></span></a>
+                                </figcaption>
+                            </figure>
+							<figure class="food_area">
+                                <img class="img-thumbnail" src="image/food1.jpg"/>
+                                <figcaption>
+                                    <h4>牛肉</h4>
+                                    <span>价格：20</span>
+                                    <a><span class="glyphicon glyphicon-plus-sign f_plus" data-this_f_id=""></span></a>
+                                </figcaption>
+                            </figure>
+							
+                        </div>
+                    </li>
+					<li><a href="#">快餐</a>
+                        <div class="food">
+							
+                            <figure class="food_area">
+                                <img class="img-thumbnail" src="image/food2.jpg"/>
+                                <figcaption>
+                                    <h4>蒸饭</h4>
+                                    <span>价格：18</span>
+                                    <a><span class="glyphicon glyphicon-plus-sign f_plus" data-this_f_id=""></span></a>
+                                </figcaption>
+                            </figure>
+							<figure class="food_area">
+                                <img class="img-thumbnail" src="image/food2.jpg"/>
+                                <figcaption>
+                                    <h4>蒸饭</h4>
+                                    <span>价格：18</span>
+                                    <a><span class="glyphicon glyphicon-plus-sign f_plus" data-this_f_id=""></span></a>
+                                </figcaption>
+                            </figure>
+							<figure class="food_area">
+                                <img class="img-thumbnail" src="image/food2.jpg"/>
+                                <figcaption>
+                                    <h4>蒸饭</h4>
+                                    <span>价格：18</span>
+                                    <a><span class="glyphicon glyphicon-plus-sign f_plus" data-this_f_id=""></span></a>
+                                </figcaption>
+                            </figure>
+							<figure class="food_area">
+                                <img class="img-thumbnail" src="image/food2.jpg"/>
+                                <figcaption>
+                                    <h4>蒸饭</h4>
+                                    <span>价格：18</span>
+                                    <a><span class="glyphicon glyphicon-plus-sign f_plus" data-this_f_id=""></span></a>
+                                </figcaption>
+                            </figure>
+							
+                        </div>
+                    </li>
+                </ul>
+				<span class="glyphicon glyphicon-chevron-down click_down"></span>
+            </nav>
+        </div>
+        <div class="footer">
+            <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">开始</a></li>
+                    <li><a href="home.html">首页</a></li>
+                    <li><a href="ordered.html">已点</a><span class="badge">0</span></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<script src="js/jquery1.9.1/jquery.js"></script>
+<script src="js/main.js"></script>
+<script>
+	if(localStorage.getItem('ORDERED_NUM')){
+		$('.footer .badge').text(localStorage.getItem('ORDERED_NUM'));
+	}
+</script>
+</body>
+</html>
